@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+ char ch[400000];
+ int i,count=0,len;
+ printf("Enter the string\n");
+ gets(ch);
+ len=strlen(ch);
+  for(i=0;ch[i]!='\0';++i)
+    {
+     if(!((ch[i]>='a'&&ch[i]<='z') || (ch[i]>='A'&&ch[i]<='Z')))
+     count++;
+    }
+    printf("%d",count);
+   for(i=0;ch[i]!='\0';++i)
+    {
+    if(ch[i]=='[',' ','@','?','+','_','-','!',"'")
+    {
+     printf("\n");
+     }
+    else
+   {
+    printf("%c",ch[i]);
+   }
+    }
+ /*for(i=1;ch[i]!='\0';++i)
+ {
+  if((ch[i]=={' ','!','[','?',',','_',''','+','@',']')
+  count++;
+  }
+   /*for(i=1;ch[i]!='\0';i++)
+    {
+        if(ch[i]!=' ')
+            printf("%c",ch[i]);
+        else
+            printf("\n");
+    }*/
+ //count=len-count;
+  return(0);
+}
